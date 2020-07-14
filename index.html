@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <title>user admin panel!</title>
+</head>
+
+<body class="bg-color">
+
+
+
+
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-10 mx-auto col-11 ">
+
+        <!-- breadcrub -->
+        <nav class="mb-4 ">
+          <ol class="breadcrumb bg-common text-white ">
+            <li class="breadcrumb-item">User</li>
+            <li class="breadcrumb-item" aria-current="page">Profile</li>
+            <li class="breadcrumb-item active" aria-current="page">Setting</li>
+          </ol>
+        </nav>
+        <!-- end of breadfcrumb -->
+
+        <!-- dashboard -->
+        <div class="row">
+        
+        
+          <!-- left navbar -->
+          <div class="col-md-4 col-lg-3  col-xxl-2 col-sm-12  d-sm-none d-md-block">
+            <div class="card shadow-lg bg-card bg-common">
+              <ul class="nav flex-column text-capitalize">
+                <li class="nav-item ">
+                  <a data-toggle="tab" href="#profile" class="nav-link"><i class="fas fa-user"></i> user</a>
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="tab" href="#setting" class="nav-link"><i class="fas fa-cogs"></i> setting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#security"><i class="fas fa-hard-hat"></i> security</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#privacy"><i class="fas fa-lock "></i> privacy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="tab" href="#notification"><i class="fas fa-bell"></i>
+                    notification</a>
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="tab" href="#billing" class="nav-link"><i class="fas fa-book"></i> billing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+        
+          <!-- right dashboard notification panel -->
+          <div class="col-md-8  col-lg-9 col-xxl-10 col-sm-12">
+            <div class="card d-md-none bg-common border-bottom mb-2 d-xxl-none d-lg-none">
+
+              <ul class="nav nav-tabs nav-fill">
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab"  href="#profile"><i class="fas fa-user"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#setting"><i class="fas fa-cogs"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#security"><i class="fas fa-hard-hat"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#privacy"><i class="fas fa-lock "></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="tab" href="#notification"><i class="fas fa-bell"></i> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#billing" data-toggle="tab" class="nav-link"><i class="fas fa-book"></i> </a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- right dashboard notification panel -->
+
+            <!-- right  panel -->
+
+            <div class="card shadow-lg  tab-content p-2">
+
+              <!-- user profile -->
+              <div class="tab-pane fade show active" id="profile">
+                <form>
+                  <div class="caption">
+                    <p class=" display-6 text-capitalize">profile infomation</p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name </label>
+                    <input type="text" value="jaswant bisht" class="form-control" placeholder="your name" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="">Your Bio</label>
+                    <textarea class="form-control"
+                      placeholder="your bio here.........">i m full stack web developer and graphhic designer</textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" value="jaswantbisht@yahop.in" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="url" class="form-label">URL</label>
+                    <input type="url" class="form-control" value="http://mywebtechsolution.com" id="url"
+                      placeholder="enter URL">
+                  </div>
+                  <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" value="Sant Nagar, Buuari, New Delhi" id="location"
+                      placeholder="enter location">
+                  </div>
+
+                  <button type="submit" class="btn btn-outline-primary">Update Profile</button>
+                  <button type="button" class="btn btn-outline-secondary ">Reset Profile</button>
+                  <p class=" form-text">all of the fields values are static and can be changed at any time</p>
+                </form>
+                <!-- user profile -->
+              </div>
+              <!-- user profile -->
+
+
+              <!-- setting content -->
+              <div class=" tab-pane" id="setting">
+                <div class="caption">
+                  <p class=" display-6 text-capitalize">account setting</p>
+                </div>
+
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">UserName </label>
+                    <input type="text" value="jaswant bisht" class="form-control" placeholder="UserName" id="name">
+                    <div class="form-text">after changing your username you can not change it again util 90 days</div>
+                  </div>
+                  <div class="mb-3 ">
+                    <p class=" text-danger font-weight-bold">Delete Account</p>
+                    <p class="text-muted">oonce your account Delete, there will be no options to going back. ples4r
+                      carefull about it</p>
+                    <button class="btn btn-danger border-0">Delete</button>
+                  </div>
+                </form>
+              </div>
+              <!-- setting conten -->
+
+
+              <!-- security content -->
+              <div class="  tab-pane" id="security">
+                <div class="caption">
+                  <p class=" display-6 text-capitalize">security setting</p>
+                </div>
+
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Change Password </label>
+                    <input type="passsword" class="mb-2 form-control" placeholder="Enter Old Password" value="******">
+                    <input type="passsword" class="mb-2 form-control" placeholder="Enter New Password">
+                    <input type="passsword" class="mb-2 form-control" placeholder="Enter Confirm New Password">
+                  </div>
+                  <hr class="  hr">
+                  <div class="mb-3">
+                    <button class="btn btn-info">Enable Two Factor Authentication</button>
+                    <p class="text-muted">
+                      Two Factor Authentication, or 2FA, is an extra layer of protection used to ensure the security of
+                      online accounts beyond just a username and password.</p>
+                  </div>
+                  <hr class="  hr">
+
+                  <div class="mb-3 ">
+                    <p class="">Session</p>
+                    <span class="text-muted">this is a list of devices that have logged into your account</span>
+                    <div class="card">
+                      <p class="pl-1 font-weight-bold">Pokhgf 28 5676 <sub>4</sub>B, 8767856 <sub>5</sub>R </p>
+                      <p class="text-capitalize pl-1 text-muted">your current session seen in uttrakhand</p>
+                      <button class=" btn btn-light btn-sm">More</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- security conten -->
+
+              <!-- privacy content -->
+              <div class="card tab-pane" id="privacy">
+                <h2>privacy Xon</h2>
+              </div>
+              <!-- privacy conten -->
+
+              <!-- notification content -->
+              <div class="tab-pane" id="notification">
+                <div class="caption">
+                  <p class=" display-6 text-capitalize">notification setting</p>
+                  <hr>
+                </div>
+
+                <div class=" ">security alerts
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label text-capitalize" for="flexCheckChecked">
+                      email each time when vulnerability is found
+                    </label>
+                  <span class=" text-muted d-block text-uppercase">recciving all security related alerts via email</span>
+
+                  </div>
+
+                  <p class="">SMS notification</p>
+                
+                  <div class="card p-2">
+                            <div class=" mb-1">
+                              <p>comments</p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="comments" checked>
+                             </div>
+                            </div>
+                             
+                            <div class="mb-1">
+                              <p>SMS</p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="SMS" checked>
+                                
+                              </div>
+                            </div>
+
+                            <div class="mb-1">
+                              <p>Updates from app </p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="Updates" checked>
+                             </div>
+                            </div>
+
+                            <div class="mb-1">
+                              <p>Remainder </p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="Updates" checked>
+                             </div>
+                            </div>
+
+
+                            <div class=" mb-1">
+                              <p>Pages you follow </p>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="Updates">
+                             </div>
+                            </div>
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+              <!-- notification conten -->
+
+
+
+              <!-- billing content -->
+              <div class=" tab-pane" id="billing">
+                <div class="caption">
+                  <p class=" display-6 text-capitalize">billing setting</p>
+                  <hr>
+                </div>
+
+                <div class="">
+                  <h1 class="">payment  method</h1>
+                  <p class="text-muted">you ve not add any payment method</p>
+                  <hr class="mb-3">
+                  <button class="btn btn-info text-capitalize">add payment method</button>
+
+                  <br class="mb-1"> 
+                  <p class="">payment history</p>
+                  <div class="card p-2  text-center shadow-lg">
+                    you ve not made any payments
+                  </div>
+                </div>
+
+              </div>
+              <!-- billing conten -->
+
+            </div>
+            <!-- right  panel -->
+          </div>
+        </div>
+        <!-- end dashboard -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
